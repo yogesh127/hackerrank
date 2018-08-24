@@ -1,0 +1,38 @@
+<html> 
+<head> 
+<script type="text/javascript"> 
+function getValue()
+{ 
+var val1 = prompt("Enter first Number : ", " "); 
+var val2 = prompt("Enter Second Number : ", " ");
+var val3 = prompt("Enter third Number : ", " ");
+
+var max=val1;
+var min = val1;
+if(max<val2)
+	max=val2;
+if(max<val3)
+	max=val3;
+if(min>val2)
+	min=val2;
+if(max>val3)
+	min=val3;
+
+	document.write("<center>")
+	
+	document.write("<font color = 'green' size = 10 >")
+	document.write("maximum number is"+max);
+	document.write("</font>")
+	document.write("<font color = 'red' size = 10 >")
+	document.write("<br>min number is"+min);
+	document.write("</font>")
+	document.write("<center>")
+}
+</script> 
+</head> 
+<body> 
+<h1><p>Click to get maximum and minimum no </p> </h1>
+<form> <input type="button" value="GO Ahead" onclick="getValue()" /> 
+</form> 
+</body> 
+</html>

@@ -1,0 +1,67 @@
+<html>
+<head>
+
+<script>
+		function myFunction() {
+    					var x = document.getElementById("frm1");
+    					var text = "";
+    					var i;
+					
+    					for (i = 0; i < x.length ;i++) {
+        						text += x.elements[i].value + "<br>";
+    				       			}
+    					document.getElementById("demo").innerHTML = text;
+					document.write(text)
+					}
+
+</script>
+</head>
+<body bgcolor="87cefa">
+
+<br>
+<br>
+<font color = 'yellow' size =34>
+<a href="home.html">Home</a>
+</font>
+
+	<center>
+	
+		<font size=13 color ="yellow"><i>THE Registration  FORM </i></font>
+
+		<br>
+	<form id = "frm1" action ="formKpit.html" >
+		<table>
+		<br>
+		<tr><td>First Name</td>  <td> <input type = "text" name = "txt1" id = "f1"></td></tr>
+		<tr><td>Last Name:</td>    <td> <input type = "text2" name = "txt2" id = "f2"></td></tr>
+		<tr><td>Address</td>      <td> <input type = "text3" name = "txt3" id = "f3"></td></tr>
+
+		<tr><td>Address</td>      <td> <input type = "text4" name = "txt3" id = "f4"></td></tr>
+
+		<tr><td>city</td>      <td> <input type = "text5" name = "txt3" id = "f5"></td></tr>
+
+		<tr><td>State</td>      <td> <input type = "text6" name = "txt3" id = "f6"></td></tr>
+
+		<tr><td>Interest Area</td>      <td> <input type = "text7" name = "txt3" id = "f7"></td></tr>
+		
+		<tr><td><input type = "submit" name = "submit" value = "submit" onclick="myFunction()"></td>
+		<td><input type = "reset" name = "reset" value = "reset"></td></tr>
+		</table>
+		
+	</form>
+	
+	</center>
+	<p>Click "Try it" to display the value of each element in the form.</p>
+
+
+
+<p id="demo">   </p>
+<script>	
+
+</script>
+
+
+
+	
+</body>
+</html>

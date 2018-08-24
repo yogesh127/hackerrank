@@ -1,0 +1,126 @@
+<html>
+<body>
+<script>
+	var name = "Brunda"
+	console.log(`hello  ${name}`);
+
+	var a = 10;
+	var b= 20;
+	console.log(`The Sum of ${a} and ${b} is ${a+b}`);
+	var map = new Map();
+	map.set("1",true);
+	console.log(map.has("1"));
+
+	var map = new Map();
+	map.set('id1','user')
+	map.set('id2','Guest')
+	map.set('id3','Admin')
+	console.log(map.has('id1'))
+
+	var map = new Map ([
+		['r1','user'],
+		['r2','Guest'],
+		['r3','Admin'],
+
+	]);
+	for(let r of map.entries())
+	{
+		console.log(`${r[0]}:${r[1]}`);
+	}
+	
+	var set1 = new Set(['a','b','c','d','e']);
+	var iterator = set1.values();
+	
+	function add1(a,b=1)
+	{
+		return a+b;
+	}
+	document.write('<br>'+add1(4,5))
+
+
+
+	function fun1(...params)
+	{
+		document.write('<br>'+params.length);
+
+		}	
+
+
+	document.write('<br>'+fun1())
+	document.write('<br>'+fun1(4,5))
+	document.write('<br>'+ fun1(4,5,5))
+
+	var fun2= function(x,y)
+	{
+		return x*y;
+	};
+
+	function product()
+	{
+		var result;
+		result = fun2(10,20)
+		document.write('<br> the product is'+result)
+		
+
+	}
+	product()
+
+	<!-- Object oriennted -->
+	class Employee
+	{
+		
+		constructor(id,ename)
+		{
+			this.id=id;
+			this.ename=ename;
+		}
+		showAll()
+		{
+			console.log("this is id of employee " +this.id);
+			console.log("this is ename  " +this.ename) 
+		}
+	}
+	var employee = new Employee(101,"yogesh")
+	employee.showAll()
+
+
+	class Employe
+	{
+		static showAll()
+		{
+			console.log("this is id of employee is yogesh" );
+			console.log("this is ename is yogesh ") 
+		}
+	}
+	Employe.showAll()
+
+
+	class Shape
+	{
+		constructor(a)
+		{
+			this.Area = a
+		}
+		disp()
+		{
+
+
+		}
+
+	}
+	class Circle extends Shape
+	{
+		disp()
+		{
+			super.disp();
+			console.log("Area of the circle :" + this.Area)
+		}
+	}
+	
+	 var p = new Circle()
+		p.disp()
+
+
+</script>
+</body>
+</html>
